@@ -1,0 +1,11 @@
+h1 {
+    font-size: 100px;
+    color: blueviolet;
+    border: 10px solid black;
+}
+
+p {
+    font-size: 50px;
+    color: burlywood;
+    background-color: grey;
+}

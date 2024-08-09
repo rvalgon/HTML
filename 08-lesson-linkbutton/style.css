@@ -1,0 +1,16 @@
+h1{
+    color: purple;
+}
+
+a:link, a:visited{
+    background-color: grey;
+    color: pink;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    background-color: black;
+    color: pink;
+}

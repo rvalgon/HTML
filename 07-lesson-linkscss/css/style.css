@@ -1,0 +1,28 @@
+h1{
+    color: blueviolet;
+}
+
+/* esto sirve para cambiar la apariencia del link antes de clickearlo */
+a:link{
+    color: red;
+    /* con esto le quitamos el subrayado inferior al link */
+    text-decoration: none;
+}
+
+/* esto sirve para cambiar la apariencia de link después de clickearlo */
+a:visited{
+    background-color: blue;
+    color: orange;
+}
+
+/* esto sirve para cambiar la apariencia del link cuando nos situamos encima de él con ratón */
+a:hover{
+    color:black;
+    text-decoration: underline;
+}
+
+/* esto sirve para cambiar la apariencia del link cuando le damos click (sin soltar) */
+a:active{
+    color: grey;
+    text-decoration: underline;
+}
