@@ -11,6 +11,27 @@ table, th, td{
 
 }
 
+caption{
+    color: black;
+    font-size: 35px;
+    font-family: Roboto mono;
+    line-height: 200%;
+}
+
+th{
+    color: wheat;
+    background-color: black;
+}
+
+tr:nth-child(even){
+    background-color: grey;
+}
+
+tr:nth-child(odd){
+    background-color: burlywood;
+}
+/* la función nth-child(even) selecciona los renglones pares */
+/* la función nth-child(odd) selecciona los renglones impares */
 
 /*
 td {

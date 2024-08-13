@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>09 Lesson Tables</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Syne+Mono&display=swap" rel="stylesheet">
+    <!-- con el link superior podemos incluir una fuente desde internet, basta con copiar el embed code y poner su nombre en la font-family-->
 </head>
 <body>
     <h1>09 Lesson Tables</h1>
     <table> <!-- Declaramos que vamos a crear una tabla -->
+        <caption>Título de la tabla</caption> <!-- con caption ponemos título a la tabla-->
         <tr> <!-- Declaramos que vamos a crear una fila dentro de la tabla -->
             <th>Nombre</th> <!-- Declaramos que vamos a crear una columna dentro de la fila-->
-            <th>Apellido</th>
+            <!-- con colspan="2" podemos juntar dos columnas-->
+            <th>Apellidos</th>
             <th>Email</th>
         </tr>
         <tr>
             <td>Juan</td> <!-- Declaramos que vamos a crear un dato en la tabla -->
+            <!-- con rowspan="2" podemos juntar dos filas-->
             <td>Perez</td>
             <td>jperez@email.com</td>
         </tr>
@@ -23,6 +30,16 @@
             <td>Carmen</td> <!-- Declaramos que vamos a crear un dato en la tabla -->
             <td>Rodríguez</td>
             <td>crodriguez@email.com</td>
+        </tr>
+        <tr>
+            <td>Luisa</td> <!-- Declaramos que vamos a crear un dato en la tabla -->
+            <td>Sayago</td>
+            <td>lsayago@email.com</td>
+        </tr>
+        <tr>
+            <td>Rodrigo</td> <!-- Declaramos que vamos a crear un dato en la tabla -->
+            <td>Hernández</td>
+            <td>rhernandez@email.com</td>
         </tr>
     </table>
     
