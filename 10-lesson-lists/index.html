@@ -7,29 +7,51 @@
     <link rel="stylesheet" href="/10-lesson-lists/style.css">
 </head>
 <body>
-    <nav>
-        <ul class="menu">
-            <li class="menulist"><a href="index.html" class="menulistlink"">Inicio</a></li>
-            <li class="menulist"><a href="contacto.html" class="menulistlink">contacto</a></li>
-            <li class="menulist"><a href="acerca.html" class="menulistlink">Acerca de </a></li>
-        </ul>
-    </nav>
-    <br>
-    <h1>Listas no ordenadas</h1>
-    <ul style="list-style-type: square;">
-    <!-- con style="list-style-type:" podemos cambiar la viñeta de la lista-->
-        <li>Juan</li>
-        <li>Carla</li>
-        <li>María</li>
-            <ul>
-                <li>Teléfono: 650905631</li>
-                <li>Email: mgomez@gmail.com
-                </li>
-            </ul>
+    <ul class="nav">
+        <li><a href="/10-lesson-lists/index.html"">Inicio</a></li>
+        <li><a href="/10-lesson-lists/contact.html">Contacto</a></li>
+        <li><a href="/10-lesson-lists/about.html">Acerca de </a></li>
     </ul>
-    <h1>Listas ordenadas</h1>
-    <ol>
-        <li></li>
+    <h1>Lista desordenada</h1>
+    <ul style="list-style-type: square;"> <!-- con "list-style-type: " cambiamos la viñeta de la lista-->
+        <li>Juan</li>
+        <ul>
+            <li>Teléfono: 650905638</li>
+        </ul>
+        <li>Carla
+            <ul>
+                <li>Teléfono: 650905654</li>
+            </ul>
+        </li>
+        <li>María</li>
+        <li>Carlos</li>
+    </ul>
+    <h1>Lista ordenada</h1>
+    <p>Ofrecemos los siguientes servicios:</p>
+    <ol> <!--con "type: " podemos cambiar la viñeta de la lista ordenada, pudiendo ser numeros arábigos, romanos, letras... -->
+        <li>Atención al cliente</li>
+        <li>Asesoramiento y asistencia</li>
+        <li>Estudio y análisis de casos</li>
+        <li>Auditorías</li>
     </ol>
+
+    <p>De forma secundaria, ofrecemos los siguientes servicios de forma complementaria:</p>
+    <ol>
+        <li>Estructuración de bases de datos</li>
+        <li>Data Mining</li>
+        <li>Pentesting</li>
+    </ol>
+
+    <h1>Listas de descripción</h1>
+    <h2>Lenguajes de programación</h2>
+    <dl> <!-- description list-->
+        <dt>Java</dt> <!-- description term -->
+        <dd>Lenguaje con el que se hizo el popular videojuego <i>Minecraft</i>.</dd> <!-- description data -->
+        <dt>HTML</dt> 
+        <dd>Lenguaje con el que, junto a CSS y JavaScript, se articulan todas las páginas web de Internet.</dd>
+        <dt>Python</dt>
+        <dd>Popular lenguaje de programación, ampliamente utilizado en el <i>Machine Learning</i>.</dd>
+    </dl>
+    
 </body>
 </html>

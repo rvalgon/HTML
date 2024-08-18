@@ -1,13 +1,58 @@
-.menu{
-   list-style-type: none;
-   background-color: green; 
+h1{
+    color: darkblue;
 }
 
-.menulist{
+
+/* con el selector .nav puedo darle estilos a los elementos que lleven la clase "nav", evitando asi que otros se vean afectados por estos*/
+.nav{
+    list-style-type: none;
+    background-color: lightblue;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li{
     float: left;
 }
 
-.menulistlink{
+.nav li a{
     display: block;
+    color: grey;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.nav li a:hover{
+    color: black;
+    background-color: grey;
+}
+
+ol{
+    /* de esta manera, le decimos que reseteé el contador en cada lista nueva*/
+    list-style: none;
+    counter-reset: contador;
+}
+
+p{
+    background-color: lightsteelblue;
+}
+
+ol li{
+    /*de esta manera, le decimos que por cada li que incremente en 1 el contador*/
+    counter-increment: contador;
+    background-color: lightgray;
+}
+
+/* con el selector "::before" podemos colocar texto antes de cada li y con el selector "::after" podemos hacerlo después de cada li*/
+/* de esta manera, le decimos que escriba el contador después de "servicio" y antes del ":" */
+
+ol li::before{
+    content: "Servicio " counter(contador) ": ";
+    color: blue;
+}
+
+ol li::after{
+    content: ".";
 }
