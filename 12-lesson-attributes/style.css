@@ -1,0 +1,36 @@
+/* con el asterisco podemos definir estilos que se van a aplicar a la totalidad del documento HTML */
+/* por ej, si yo defino un padding/margin de 0 aqui, si después defino en una clase un padding de 10, se sobreescribe, porque se aplica lo último que está escrito (prioridad de arriba a abajo en el documento CSS)*/
+/*por eso esto se conoce como hojas de estilo en cascada*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*esto es un id, y se emplea de forma similar a una class, con la singularidad de que debe ser empleado en un elemento ÚNICO de nuestra web*/
+/*a diferencia de una class, el id no debe repetirse*/
+#titulo_principal{
+    color: pink;
+    text-align: center;
+    margin: 15px;
+}
+
+h2{
+    color: purple;
+}
+
+p{
+    color: rgb(3, 5, 0);
+}
+
+/* esto es una clase y nos permite asignar atributos a elementos concretos, sin que se apliquen a todos los elementos del documento html */
+.tarjeta{
+    border: 10px solid darkred;
+    background-color: wheat;
+    text-align: center;
+    margin: 15px 100px;
+    padding: 15px;
+}
+
+.titulo{
+    color: rgb(30, 169, 204);
+}
