@@ -1,0 +1,35 @@
+.titulo{
+    color: red;
+    text-align: center;
+}
+
+/*aqui hemos creado una clase para darle estilo al marco de nuestro iframe*/
+.marco{
+    width: 100%;
+    height: 200px;
+    border: 1px solid blue;
+
+}
+
+.centrar{
+    text-align: center;
+}
+
+
+/*aqui hemos creado una clase para darle estilo al enlace para cambiar el contenido del iframe*/
+/*originalmente, lucía como un enlace pero lo hemos transformado en un botón*/
+.button{
+    color: blue;
+    background-color: grey;
+    border: 2px solid blue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+
+}

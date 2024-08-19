@@ -8,6 +8,7 @@
 
 /*esto es un id, y se emplea de forma similar a una class, con la singularidad de que debe ser empleado en un elemento ÚNICO de nuestra web*/
 /*a diferencia de una class, el id no debe repetirse*/
+/*los ids son sensibles a las mayúsculas*/
 #titulo_principal{
     color: pink;
     text-align: center;

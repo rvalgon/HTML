@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13 Lesson iFrames</title>
+    <link rel="stylesheet" href="/13-lesson-iframes/style.css">
+</head>
+<body>
+    <h1 class="titulo">Uso del iFrame en HTML</h1>
+    <!--los iframes son recuadros dentro de un documento HTML que nos permiten insertar contenido externo al documento HTML-->
+    <!-- podemos insertar otras webs, mapas, videos, etc... -->
+    <iframe src="texto.html" class="marco" name="marco1"></iframe>
+    <div class="centrar">
+        <!-- hemos creado un botón que, al pulsar, cambia el contenido del iframe, pasando de una web a desplegar un mapa -->
+        <a href="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=Calle%20P%C3%A9rez%20Herv%C3%A1s+(Mi%20casa)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" target="marco1" class="button">Cargar mapa de mi casa</a>
+    </div>
+</body>
+</html>
