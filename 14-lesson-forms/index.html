@@ -10,7 +10,8 @@
     <h1>Formularios en HTML</h1>
     <!-- con la etiqueta form creamos un formulario-->
     <!--<form novalidate></form> si usamos esta forma, el formulario se enviará sin requerir completar todos los campos --> 
-    <form method="get">
+    <form method="get" action="mi_servidor" target="_blank" autocomplete="off">
+        <!-- con el atributo action podemos indicar a que url vamos a mandar la información del formulario para que sea procesada -->
         <!-- con el atributo method podemos seleccionar que metodo http va a usar para enviar la informacion-->
         <!-- con "post" la información que enviemos no aparecerá en el query list (en la url)-->
         <!-- con "get" la información que enviemos aparecerá en el query list (en la url)-->
@@ -20,60 +21,75 @@
         <!-- con el atributo value podemos asignar un valor a la caja concretamente, no aportado por el usuario -->
         <!-- con la etiqueta input y el atributo type="submit" creamos un botón para realizar el envío de información -->
         <!-- es recomendable que el atributo id y name tengan el mismo nombre -->
-        <label for="nombre">Nombre:</label><br>
-        <input name="nombre" type="text" id="nombre" placeholder="Escribe tu nombre" required><br>
+        <fieldset>
+            <!-- fieldset nos permite crear un recuadro con todo el formulario -->
+            <legend>Datos Personales</legend>
+            <!-- legend nos permite añadir una especie de título al fieldset -->
+            <!-- el atributo readonly no permite al usuario editar el campo-->
+            <!-- el atributo disabled deshabilita el envío de ese campo a la url del action -->
+            <label for="idPersona">ID Persona:</label><br>
+            <input name="idPersona" type="text" id="idPersona" readonly disabled value="100"><br>
+            <!-- el atributo hidden no muestra el input, pero se sigue mandando a la url del action -->
+            <input type="hidden" id="sistema" name="sistema" value="SAP">
 
-        <label for="apellidos">Apellidos:</label><br>
-        <input name="apellidos"type="text" id="apellidos" placeholder="Escribe tus apellidos" required><br>
+            <label for="nombre">Nombre:</label><br>
+            <input name="nombre" type="text" id="nombre" placeholder="Escribe tu nombre" required><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" name="email" id="email" placeholder="Escribe tu email"><br>
-        <!-- con el atributo step podemos decirle que acepte valores decimales -->
-        <label for="edad">Edad:</label><br>
-        <input type="number" name="number" id="number" placeholder="Introduce tu edad" step="any"><br>
+            <label for="apellidos">Apellidos:</label><br>
+            <input name="apellidos"type="text" id="apellidos" placeholder="Escribe tus apellidos" required><br>
 
-        <!-- para que solo podamos escoger una opción entre varias del mismo tipo, el atributo name debe ser el mismo -->
-        <!-- de esta manera, al seleccionar masculino y después femenino, se descheckea masculino -->
-        <label for="">Género</label><br>
-        <input type="radio" name="genero" id="masculino" value="masculino">
-        <label for="masculino">Masculino</label><br>
-        <input type="radio" name="genero" id="femenino" value="femenino">
-        <label for="femenino">Femenino</label><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" placeholder="Escribe tu email"><br>
+            <!-- con el atributo step podemos decirle que acepte valores decimales -->
+            <label for="edad">Edad:</label><br>
+            <input type="number" name="number" id="number" placeholder="Introduce tu edad" step="any"><br>
 
-        <label for="">Música favorita</label><br>
-        <input type="checkbox" name="Hip-hop" id="Hip-hop">
-        <label for="Hip-hop">Hip-hop</label><br>
-        <input type="checkbox" name="Jazz" id="Jazz">
-        <label for="Jazz">Jazz</label><br>
-        <input type="checkbox" name="Reggaetón" id="Reggaetón">
-        <label for="Reggaetón">Reggaetón</label><br>
-        <input type="checkbox" name="Clasica" id="Clasica">
-        <label for="Clasica">Clásica</label><br>
+            <!-- para que solo podamos escoger una opción entre varias del mismo tipo, el atributo name debe ser el mismo -->
+            <!-- de esta manera, al seleccionar masculino y después femenino, se descheckea masculino -->
+            <label for="">Género</label><br>
+            <input type="radio" name="genero" id="masculino" value="masculino">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" name="genero" id="femenino" value="femenino">
+            <label for="femenino">Femenino</label><br>
 
-        <label for="equipofav">Equipo favorito de fútbol:</label><br>
-        <select name="equipos" id="equipos">
-        <option value="sevillafc">Sevilla FC</option>
-        <option value="rbb">Real Betis Balompié</option>
-        <option value="barcelona">Barcelona FC</option>
-        <option value="madrid">Real Madrid</option>
-        </select><br>
-        <label for="equipofav">Otros equipos que te gusten:</label><br>
-        <select name="equipos2" id="equipos" multiple>
-        <option value="sevillafc">Sevilla FC</option>
-        <option value="rbb">Real Betis Balompié</option>
-        <option value="barcelona">Barcelona FC</option>
-        <option value="madrid">Real Madrid</option>
-        </select><br>
+            <label for="">Música favorita</label><br>
+            <input type="checkbox" name="Hip-hop" id="Hip-hop">
+            <label for="Hip-hop">Hip-hop</label><br>
+            <input type="checkbox" name="Jazz" id="Jazz">
+            <label for="Jazz">Jazz</label><br>
+            <input type="checkbox" name="Reggaetón" id="Reggaetón">
+            <label for="Reggaetón">Reggaetón</label><br>
+            <input type="checkbox" name="Clasica" id="Clasica">
+            <label for="Clasica">Clásica</label><br>
 
-        <label for="comentario">Comentario:</label><br>
-        <textarea name="comentario" id="comentario" placeholder="Deja aqui un comentario" rows="2" cols="30"></textarea><br>
+            <label for="equipofav">Equipo favorito de fútbol:</label><br>
+            <select name="equipos" id="equipos">
+            <option value="sevillafc">Sevilla FC</option>
+            <option value="rbb">Real Betis Balompié</option>
+            <option value="barcelona">Barcelona FC</option>
+            <option value="madrid">Real Madrid</option>
+            </select><br>
 
-        <label for="password">Contraseña:</label><br>
-        <input type="password" name="password" id="password"><br>
+            <label for="equipofav">Otros equipos que te gusten:</label><br>
+            <select name="equipos2" id="equipos" multiple>
+            <option value="sevillafc">Sevilla FC</option>
+            <option value="rbb">Real Betis Balompié</option>
+            <option value="barcelona">Barcelona FC</option>
+            <option value="madrid">Real Madrid</option>
+            </select><br>
 
-        <input type="submit" value="Enviar información (validada)">
-        <!-- de esta forma, se proporciona la posibilidad de enviar el formulario sin completar todos los campos-->
-        <input type="submit" value="Enviar información (sin validación)" formnovalidate="formnovalidate"> 
+            <label for="comentario">Comentario:</label><br>
+            <textarea name="comentario" id="comentario" placeholder="Deja aqui un comentario" rows="2" cols="30"></textarea><br>
+
+            <label for="password">Contraseña:</label><br>
+            <input type="password" name="password" id="password"><br>
+
+            <input type="submit" value="Enviar información (validada)">
+            <!-- de esta forma, se proporciona la posibilidad de enviar el formulario sin completar todos los campos-->
+            <input type="submit" value="Enviar información (sin validación)" formnovalidate="formnovalidate"> 
+            <!-- el input type="reset" genera un botón para resetear el contenido de los inputs -->
+            <input type="reset"> 
+        </fieldset>
     </form>
 
 

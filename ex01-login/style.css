@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: purple;
+  font-family: "Open Sans", sans-serif;
+}
+
+a p {
+  text-align: center;
+  color: white;
+}
+
+a p:hover {
+  color: pink;
+}
+
+fieldset {
+  border-radius: 3px;
+}
+
+#loginPanel {
+  margin: 5% 30%;
+}
+
+#loginPanel h1 {
+  text-align: center;
+  color: lightskyblue;
+}
+
+#userPasswordForm {
+  padding: 5%;
+}
+
+#userPasswordForm label,
+input {
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-color: white;
+  color: white;
+}
+
+#userPasswordForm input {
+  width: 100%;
+}
+
+#enviar {
+  height: 50px;
+  width: 40px;
+  border-bottom: 0px;
+  text-align: center;
+  background-color: rgb(243, 19, 123);
+  transition: background-color 1.5s;
+}
+
+#enviar:hover {
+  background-color: white;
+  color: black;
+}
