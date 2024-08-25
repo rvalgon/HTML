@@ -1,18 +1,17 @@
-h1{
-    color: blue;
+h1 {
+  color: blue;
 }
 
-p{
-    color: white;
-    background-color: lightslategray;
-    padding: 50px;
-    border: 2px solid black;
+p {
+  color: white;
+  background-color: lightslategray;
+  padding: 50px;
+  border: 2px solid black;
 }
 
-ul{
-    color: black;
-    background-color: grey;
-    border: 2px solid red;
-    margin: 50px;
-
+ul {
+  color: black;
+  background-color: grey;
+  border: 2px solid red;
+  margin: 50px;
 }

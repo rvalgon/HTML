@@ -1,14 +1,26 @@
 html {
   margin: 0;
   padding: 0;
-  background: rgb(148,187,233);
-  background: radial-gradient(circle, rgba(148,187,233,1) 20%, rgba(238,174,202,1) 80%);
+  background: radial-gradient(
+    circle,
+    rgba(148, 187, 233, 1) 20%,
+    rgba(238, 174, 202, 1) 80%
+  );
   font-family: "Open Sans", sans-serif;
+}
+
+p {
+  text-align: center;
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }
 
 a p {
   text-align: center;
-  color: white;;
+  color: white;
 }
 
 a p:hover {
@@ -16,6 +28,7 @@ a p:hover {
 }
 
 fieldset {
+  border-radius: 20px;
   border-width: 2px;
   border-color: white;
 }
@@ -47,6 +60,10 @@ input {
   color: black;
 }
 
+.userpw input{
+  background: transparent;
+}
+
 #enviar {
   height: 50px;
   width: 40px;
@@ -54,6 +71,8 @@ input {
   text-align: center;
   background-color: rgb(243, 19, 123);
   transition: background-color 1.5s;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 #enviar:hover {

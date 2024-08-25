@@ -10,26 +10,33 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="/ex01-login/favicon.png" />
     <title>Login</title>
   </head>
   <body>
     <div id="loginPanel">
       <fieldset>
         <br />
-        <h1>Login</h1>
+        <h1>Iniciar Sesión</h1>
+        <p>Introduzca sus credenciales</p>
         <br />
-        <form action="database.html" method="post" name="formulario">
+        <form method="get" name="formulario">
           <div id="userPasswordForm">
-            <label for="Usuario">Usuario</label>
-            <input type="text" required id="Usuario" />
-            <br />
-            <br />
-            <label for="Password">Password</label>
-           
-            <input type="password" required id="Password" />
-            <br />
-            <br />
-            <br />
+            <div class="userpw">
+              <label for="Usuario" name="Usuario">Usuario</label>
+              <input type="text" required id="Usuario" name="Usuario" />
+              <br />
+              <br />
+            </div>
+
+            <div class="userpw">
+              <label for="Password" name="Password">Password</label>
+              <input type="password" required id="Password" name="Password" />
+              <br />
+              <br />
+              <br />
+            </div>
+              
             <div id="hoverSubmit">
               <input type="submit" value="E N V I A R" name="" id="enviar" />
             </div>
@@ -37,6 +44,10 @@
             <br />
             <a href=""
               ><p>¿Has olvidado tu contraseña?</p>
+              <p></p
+            ></a>
+            <a href=""
+              ><p>¿No tienes una cuenta?</p>
               <p></p
             ></a>
           </div>
